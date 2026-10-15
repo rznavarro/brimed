@@ -1,0 +1,6 @@
+{
+  "name": "Brimed Salud",
+  "description": "Centro médico familiar en Ñuñoa con dos sedes. Medicina general, especialidades, laboratorio, ecografías y rayos X. Descuentos con Tarjeta Vecino. Reserva tu hora online.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

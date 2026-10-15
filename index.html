@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brimed Salud | Centro médico en Ñuñoa — Reserva tu hora online</title>
+  <meta name="description" content="Centro médico familiar en Ñuñoa con dos sedes. Medicina general, especialidades, laboratorio, ecografías y rayos X. Descuentos con Tarjeta Vecino. Reserva tu hora online.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:title" content="Brimed Salud — Reserva tu hora en Ñuñoa">
+  <meta property="og:description" content="Centro médico familiar en Ñuñoa con dos sedes. Medicina general, especialidades, laboratorio, ecografías y rayos X. Descuentos con Tarjeta Vecino. Reserva tu hora online.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://brimedsalud.cl/wp-content/uploads/2020/11/LOGO-BRIMED-SALUD-web.jpg">
+  <meta property="og:image:width" content="633">
+  <meta property="og:image:height" content="633">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://brimedsalud.cl/wp-content/uploads/2024/05/LOGO-BRIMED-SALUD-Iso-300x300.png">
+
+  <!-- Tipografía: Nunito Sans de respaldo obligatorio -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Tipografía: Avenir Next (marca Brimed Salud) -->
+  <style>
+    @font-face {
+      font-family: 'Avenir Next';
+      src: url('https://brimedsalud.cl/wp-content/uploads/2026/05/AvenirNextCyr-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Avenir Next';
+      src: url('https://brimedsalud.cl/wp-content/uploads/2026/05/AvenirNextCyr-Bold.ttf') format('truetype');
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      font-family: 'Avenir Next', 'Nunito Sans', system-ui, -apple-system, sans-serif;
+      color: #142B3B;
+      background-color: #F4F8FA;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Animación exclusiva del Hero */
+    @keyframes growVertical {
+      0% { transform: scaleY(0); }
+      100% { transform: scaleY(1); }
+    }
+    @keyframes growHorizontal {
+      0% { transform: scaleX(0); }
+      100% { transform: scaleX(1); }
+    }
+    @keyframes heroCardEntrance {
+      0% { opacity: 0; transform: translateY(24px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim-cross-v {
+      transform-origin: center;
+      animation: growVertical 450ms cubic-bezier(0, 0, 0.2, 1) forwards;
+    }
+    .anim-cross-h {
+      transform-origin: center;
+      animation: growHorizontal 450ms cubic-bezier(0, 0, 0.2, 1) 250ms forwards;
+      transform: scaleX(0);
+    }
+    .anim-hero-card {
+      animation: heroCardEntrance 500ms cubic-bezier(0, 0, 0.2, 1) 300ms forwards;
+      opacity: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .anim-cross-v, .anim-cross-h, .anim-hero-card {
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+      }
+      .fade-in-section {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+
+    /* Microinteracción de revelado suave al scroll */
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 400ms cubic-bezier(0, 0, 0.2, 1), transform 400ms cubic-bezier(0, 0, 0.2, 1);
+      will-change: opacity, transform;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Botón flecha hover */
+    .btn-arrow:hover .btn-icon {
+      transform: translateX(4px);
+    }
+  </style>
+
+  <!-- Tailwind por CDN y configuración de Marca Bloqueada -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0E5A8A',
+            secondary: '#2FA4A9',
+            surface: '#F4F8FA',
+            ink: '#142B3B',
+          },
+          fontFamily: {
+            sans: ['"Avenir Next"', '"Nunito Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Datos estructurados Schema.org MedicalClinic -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Centro Médico Brimed Salud",
+    "image": "https://brimedsalud.cl/wp-content/uploads/2024/05/LOGO-BRIMED-SALUD-web.png",
+    "telephone": "+56227160470",
+    "email": "contacto@brimedsalud.com",
+    "url": "https://brimedsalud.cl",
+    "department": [
+      {
+        "@type": "MedicalClinic",
+        "name": "Brimed Salud - Sede José Pedro Alessandri",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. José Pedro Alessandri 1859",
+          "addressLocality": "Ñuñoa",
+          "addressRegion": "Región Metropolitana",
+          "addressCountry": "CL"
+        },
+        "telephone": "+56227160470",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:45",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "14:00"
+          }
+        ]
+      },
+      {
+        "@type": "MedicalClinic",
+        "name": "Brimed Salud - Sede Grecia",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Grecia 4364",
+          "addressLocality": "Ñuñoa",
+          "addressRegion": "Región Metropolitana",
+          "addressCountry": "CL"
+        },
+        "telephone": "+56227160470",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "14:00"
+          }
+        ]
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/centromedicobrimedsalud/",
+      "https://www.instagram.com/brimedsalud/"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-surface text-ink antialiased selection:bg-secondary/20 selection:text-ink">
+
+  <!-- ======================================================== -->
+  <!-- HEADER STICKY (fondo blanco, borde inferior primary/10)   -->
+  <!-- ======================================================== -->
+  <header class="sticky top-0 z-40 w-full bg-white border-b border-primary/10 shadow-xs">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-8 h-16 md:h-20 flex items-center justify-between">
+      
+      <!-- Logo de Brimed Salud (siempre sobre fondo blanco) -->
+      <a href="#inicio" class="flex items-center gap-2" aria-label="Brimed Salud - Inicio">
+        <div id="header-logo-container" class="flex items-center">
+          <img
+            src="https://brimedsalud.cl/wp-content/uploads/2024/05/LOGO-BRIMED-SALUD-web.png"
+            alt="Logo Centro Médico Brimed Salud"
+            class="h-[44px] md:h-[52px] w-auto object-contain"
+            fetchpriority="high"
+            onerror="renderLogoFallback(this)"
+          />
+        </div>
+      </a>
+
+      <!-- Menú navegación escritorio -->
+      <nav class="hidden lg:flex items-center gap-8 text-[15px] font-semibold text-ink/80" aria-label="Navegación principal">
+        <a href="#especialidades" class="hover:text-primary transition-colors">Especialidades</a>
+        <a href="#convenios" class="hover:text-primary transition-colors">Convenios</a>
+        <a href="#opiniones" class="hover:text-primary transition-colors">Opiniones</a>
+        <a href="#sedes" class="hover:text-primary transition-colors">Sedes</a>
+        
+        <!-- Desplegable de Resultados -->
+        <div class="relative group">
+          <button
+            type="button"
+            id="btn-dropdown-resultados"
+            class="flex items-center gap-1.5 hover:text-primary transition-colors py-2 focus:outline-none"
+            aria-expanded="false"
+            aria-haspopup="true"
+          >
+            <span>Resultados</span>
+            <svg class="w-4 h-4 text-ink/60 group-hover:text-primary transition-transform group-hover:translate-y-0.5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          
+          <div
+            id="menu-dropdown-resultados"
+            class="absolute top-full right-0 w-52 py-2 mt-1 bg-white rounded-2xl border border-primary/10 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50"
+            role="menu"
+          >
+            <a
+              href="http://brimedsalud.wiener-lab.com/estudios/login"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-ink/90 hover:bg-surface hover:text-primary transition-colors"
+              role="menuitem"
+            >
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 2a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V2.75A.75.75 0 0110 2zM5.05 4.05a.75.75 0 011.06 0l2.475 2.475a.75.75 0 11-1.06 1.06L5.05 5.11a.75.75 0 010-1.06zm9.9 0a.75.75 0 010 1.06l-2.475 2.475a.75.75 0 11-1.06-1.06l2.475-2.475a.75.75 0 011.06 0zM3 13.5A6.5 6.5 0 0016.5 13.5v-1a.75.75 0 00-1.5 0v1a5 5 0 01-10 0v-1a.75.75 0 00-1.5 0v1z"/>
+              </svg>
+              <span>Laboratorio</span>
+            </a>
+            <a
+              href="https://app.dalca.cl/portal/brimed"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-ink/90 hover:bg-surface hover:text-primary transition-colors"
+              role="menuitem"
+            >
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M1 5.25A2.25 2.25 0 013.25 3h13.5A2.25 2.25 0 0119 5.25v9.5A2.25 2.25 0 0116.75 17H3.25A2.25 2.25 0 011 14.75v-9.5zm1.5 0v9.5c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75v-9.5a.75.75 0 00-.75-.75H3.25a.75.75 0 00-.75.75z" clip-rule="evenodd"/>
+                <path d="M6 8a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm5.25.75a.75.75 0 000 1.5h4a.75.75 0 000-1.5h-4z"/>
+              </svg>
+              <span>Imagenología</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Botones de acción Header -->
+      <div class="flex items-center gap-2.5 md:gap-4">
+        <!-- Teléfono mesa central -->
+        <a
+          href="tel:+56227160470"
+          class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+        >
+          <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H3.75A2.25 2.25 0 001.5 4.5v2.25z" />
+          </svg>
+          <span class="tracking-tight">+56 2 2716 0470</span>
+        </a>
+
+        <!-- Botón llamada rápido móvil -->
+        <a
+          href="tel:+56227160470"
+          aria-label="Llamar a mesa central"
+          class="sm:hidden flex items-center justify-center w-10 h-10 rounded-full border border-primary/20 text-primary active:bg-surface"
+        >
+          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H3.75A2.25 2.25 0 001.5 4.5v2.25z" />
+          </svg>
+        </a>
+
+        <!-- CTA Header -->
+        <a
+          href="https://app.salutem.cl/app/agenda-web/init/brimed"
+          target="_blank"
+          rel="noopener"
+          class="btn-arrow inline-flex items-center justify-center gap-1.5 bg-primary text-white rounded-full font-bold text-sm px-4 md:px-5 py-2 md:py-2.5 shadow-sm hover:opacity-95 transition-all"
+        >
+          <span>Reservar<span class="hidden md:inline"> hora</span></span>
+          <svg class="btn-icon w-3.5 h-3.5 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ======================================================== -->
+  <!-- SECCIÓN 1 — HERO (fondo surface, id="inicio")            -->
+  <!-- ======================================================== -->
+  <section id="inicio" class="relative bg-surface overflow-hidden pt-4 pb-10 md:pt-16 md:pb-24 lg:py-28" aria-labelledby="hero-heading">
+    
+    <!-- Patrón de fondo muy sutil con cruces en secondary/10 -->
+    <div class="absolute inset-0 pointer-events-none opacity-40">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="hero-cross-pattern" width="56" height="56" patternUnits="userSpaceOnUse">
+            <path d="M28 22v12M22 28h12" stroke="#2FA4A9" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.25"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-cross-pattern)"/>
+      </svg>
+    </div>
+
+    <div class="relative max-w-[1200px] mx-auto px-5 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+        
+        <!-- Columna Izquierda: Información y Titulares -->
+        <div class="lg:col-span-7 flex flex-col items-start text-left">
+          
+          <!-- Eyebrow distintivo con "+" -->
+          <div class="inline-flex items-center gap-2 mb-2 md:mb-3">
+            <!-- "+" redondeada -->
+            <svg class="w-3.5 h-3.5 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+              <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+              <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+            </svg>
+            <span class="text-[13px] font-extrabold uppercase tracking-[0.12em] text-secondary">
+              CENTRO MÉDICO EN ÑUÑOA
+            </span>
+          </div>
+
+          <!-- H1 de marca -->
+          <h1 id="hero-heading" class="text-[34px] sm:text-[42px] md:text-[54px] lg:text-[64px] font-extrabold text-primary leading-[1.05] tracking-tight mb-2.5 md:mb-5">
+            Reserva tu hora sin vueltas.
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="text-[16px] sm:text-[17px] md:text-[18px] leading-[1.55] text-ink/80 max-w-xl mb-4 md:mb-6">
+            Medicina general, especialidades y exámenes en dos sedes. Atención presencial y por telemedicina, de lunes a sábado.
+          </p>
+
+          <!-- Chips de Sedes en Escritorio (ocultos en móvil, se muestran debajo de la tarjeta en móvil) -->
+          <div class="hidden lg:flex flex-col gap-2 pt-2">
+            <span class="text-xs uppercase tracking-wider font-bold text-ink/50">Estado de sedes hoy:</span>
+            <div class="flex items-center gap-3">
+              <a
+                href="#sedes"
+                class="group inline-flex items-center gap-2.5 bg-white border border-primary/10 rounded-full px-4 py-2 text-xs font-semibold text-ink shadow-xs hover:border-secondary/40 transition-all"
+              >
+                <span class="sede-dot-alessandri w-2.5 h-2.5 rounded-full bg-secondary shrink-0 animate-pulse"></span>
+                <span><strong class="font-extrabold text-primary">Alessandri:</strong> <span class="sede-text-alessandri text-ink/80">Calculando...</span></span>
+              </a>
+              <a
+                href="#sedes"
+                class="group inline-flex items-center gap-2.5 bg-white border border-primary/10 rounded-full px-4 py-2 text-xs font-semibold text-ink shadow-xs hover:border-secondary/40 transition-all"
+              >
+                <span class="sede-dot-grecia w-2.5 h-2.5 rounded-full bg-secondary shrink-0 animate-pulse"></span>
+                <span><strong class="font-extrabold text-primary">Grecia:</strong> <span class="sede-text-grecia text-ink/80">Calculando...</span></span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columna Derecha: Tarjeta de Reserva con la Gran "+" Detrás -->
+        <div class="lg:col-span-5 relative w-full flex flex-col items-center">
+          
+          <!-- La "+" distintiva animada detrás de la tarjeta -->
+          <div class="absolute -top-6 -right-6 lg:-top-10 lg:-right-10 w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[420px] lg:h-[420px] pointer-events-none flex items-center justify-center -z-0">
+            <!-- Barra vertical -->
+            <div class="anim-cross-v absolute w-[36px] sm:w-[46px] lg:w-[68px] h-full bg-secondary/15 rounded-full"></div>
+            <!-- Barra horizontal -->
+            <div class="anim-cross-h absolute h-[36px] sm:h-[46px] lg:h-[68px] w-full bg-secondary/15 rounded-full"></div>
+          </div>
+
+          <!-- Tarjeta de Reserva Blanca (390x844 sin scroll) -->
+          <div class="anim-hero-card relative z-10 w-full max-w-[480px] bg-white rounded-3xl p-5 sm:p-6 md:p-8 border border-primary/10 shadow-lg">
+            
+            <h2 class="text-base sm:text-lg font-bold text-ink mb-3 sm:mb-4 tracking-tight">
+              ¿Qué necesitas agendar?
+            </h2>
+
+            <!-- Dos botones grandes de ancho completo (mínimo 56px de alto) -->
+            <div class="flex flex-col gap-3">
+              <!-- CTA Principal: Reservar Consulta -->
+              <a
+                href="https://app.salutem.cl/app/agenda-web/init/brimed"
+                target="_blank"
+                rel="noopener"
+                class="btn-arrow w-full min-h-[56px] h-14 bg-primary text-white rounded-full font-bold text-[16px] sm:text-[17px] flex items-center justify-center gap-2.5 shadow-sm hover:opacity-95 active:scale-[0.99] transition-all"
+              >
+                <span>Reservar consulta</span>
+                <svg class="btn-icon w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+
+              <!-- CTA Secundario: Reservar Examen -->
+              <a
+                href="https://app.salutem.cl/app/agenda-web/init/brimed?esProcedimiento=1"
+                target="_blank"
+                rel="noopener"
+                class="btn-arrow w-full min-h-[56px] h-14 bg-white border-2 border-primary text-primary rounded-full font-bold text-[16px] sm:text-[17px] flex items-center justify-center gap-2.5 hover:bg-surface active:scale-[0.99] transition-all"
+              >
+                <span>Reservar examen</span>
+                <svg class="btn-icon w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Línea de resultados -->
+            <div class="mt-4 pt-3.5 border-t border-primary/10 flex items-center justify-center flex-wrap gap-1.5 text-xs sm:text-[13px] text-ink/75">
+              <span>¿Buscas tus resultados?</span>
+              <a
+                href="http://brimedsalud.wiener-lab.com/estudios/login"
+                target="_blank"
+                rel="noopener"
+                class="font-semibold text-primary underline underline-offset-2 hover:text-secondary transition-colors"
+              >
+                Laboratorio
+              </a>
+              <span class="text-ink/40">·</span>
+              <a
+                href="https://app.dalca.cl/portal/brimed"
+                target="_blank"
+                rel="noopener"
+                class="font-semibold text-primary underline underline-offset-2 hover:text-secondary transition-colors"
+              >
+                Imagenología
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Chips de Sede en Móvil (debajo de la tarjeta para visibilidad instantánea) -->
+          <div class="lg:hidden w-full max-w-[480px] mt-3.5 flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <a
+                href="#sedes"
+                class="flex-1 flex items-center justify-center gap-2 bg-white/90 border border-primary/10 rounded-full py-2 px-3 text-[11px] sm:text-xs font-semibold text-ink shadow-2xs hover:border-secondary/40 transition-all"
+              >
+                <span class="sede-dot-alessandri w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+                <span class="truncate"><strong>Alessandri:</strong> <span class="sede-text-alessandri text-ink/80">Calculando...</span></span>
+              </a>
+              <a
+                href="#sedes"
+                class="flex-1 flex items-center justify-center gap-2 bg-white/90 border border-primary/10 rounded-full py-2 px-3 text-[11px] sm:text-xs font-semibold text-ink shadow-2xs hover:border-secondary/40 transition-all"
+              >
+                <span class="sede-dot-grecia w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+                <span class="truncate"><strong>Grecia:</strong> <span class="sede-text-grecia text-ink/80">Calculando...</span></span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Divisor con "+" redondeada -->
+  <div class="relative flex items-center justify-center max-w-[1200px] mx-auto px-5" aria-hidden="true">
+    <div class="w-full border-t border-primary/15"></div>
+    <div class="absolute bg-surface px-3">
+      <svg class="w-5 h-5 text-secondary" viewBox="0 0 20 20" fill="currentColor">
+        <rect x="8.5" y="2" width="3" height="16" rx="1.5"/>
+        <rect x="2" y="8.5" width="16" height="3" rx="1.5"/>
+      </svg>
+    </div>
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- SECCIÓN 2 — ESPECIALIDADES Y EXÁMENES (fondo blanco)      -->
+  <!-- ======================================================== -->
+  <section id="especialidades" class="fade-in-section bg-white py-16 md:py-24 lg:py-28" aria-labelledby="especialidades-heading">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-8">
+      
+      <!-- Encabezado de Sección -->
+      <div class="text-left mb-10 md:mb-14">
+        <div class="inline-flex items-center gap-2 mb-2">
+          <svg class="w-3.5 h-3.5 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+            <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+            <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+          </svg>
+          <span class="text-[13px] font-extrabold uppercase tracking-[0.12em] text-secondary">
+            QUÉ ATENDEMOS
+          </span>
+        </div>
+        <h2 id="especialidades-heading" class="text-[28px] sm:text-[34px] md:text-[44px] font-extrabold text-primary leading-tight tracking-tight">
+          Consultas y exámenes en un mismo lugar.
+        </h2>
+      </div>
+
+      <!-- Dos Columnas: Consultas y Exámenes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
+        
+        <!-- Columna Consultas -->
+        <div class="bg-surface rounded-3xl p-6 sm:p-8 border border-primary/10">
+          <h3 class="text-xl sm:text-2xl font-extrabold text-primary mb-6 flex items-center gap-3">
+            <span>Consultas médicas</span>
+          </h3>
+          <ul class="space-y-3.5 text-base sm:text-[17px] font-medium text-ink">
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Medicina general</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Ginecología</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Cardiología</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Dermatología</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Urología</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Psicología adultos</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Kinesiología</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Odontología (clínica dental)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna Exámenes e Imagenología -->
+        <div class="bg-surface rounded-3xl p-6 sm:p-8 border border-primary/10">
+          <h3 class="text-xl sm:text-2xl font-extrabold text-primary mb-6 flex items-center gap-3">
+            <span>Exámenes e imagenología</span>
+          </h3>
+          <ul class="space-y-3.5 text-base sm:text-[17px] font-medium text-ink">
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Laboratorio</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Electrocardiograma</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Holter de presión y de ritmo</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Ecotomografías generales y ginecológicas</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>Rayos X</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Tres Tarjetas de Valores (Distinto tamaño, Ginecología más ancha en escritorio) -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
+        
+        <!-- Tarjeta 1: Medicina General -->
+        <div class="md:col-span-6 lg:col-span-4 bg-white rounded-3xl p-6 sm:p-7 border border-primary/10 shadow-xs hover:-translate-y-0.5 hover:border-secondary/40 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-secondary mb-2">
+              <svg class="w-3 h-3 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>CONSULTA AMBULATORIA</span>
+            </div>
+            <h4 class="text-xl font-extrabold text-primary mb-2">Medicina general</h4>
+            <p class="text-sm text-ink/80 leading-relaxed mb-6">
+              Lunes a sábado, presencial y por telemedicina.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-primary/10">
+            <span class="block text-xs uppercase font-semibold text-ink/60 mb-1">Valor particular</span>
+            <div class="text-3xl font-extrabold text-primary tracking-tight">
+              Particular $18.000
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Ginecología (Más ancha en escritorio) -->
+        <div class="md:col-span-12 lg:col-span-5 bg-white rounded-3xl p-6 sm:p-7 border border-primary/10 shadow-xs hover:-translate-y-0.5 hover:border-secondary/40 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-secondary mb-2">
+              <svg class="w-3 h-3 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>SALUD DE LA MUJER</span>
+            </div>
+            <h4 class="text-xl font-extrabold text-primary mb-3">Ginecología</h4>
+            
+            <div class="space-y-2 mb-5">
+              <span class="block text-xs uppercase font-bold text-ink/70">Valores Fonasa:</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-ink/90">
+                <div class="bg-surface rounded-xl px-3 py-2 border border-primary/5">
+                  <span class="text-ink/70">Consulta:</span> <strong class="font-extrabold text-primary">$7.250</strong>
+                </div>
+                <div class="bg-surface rounded-xl px-3 py-2 border border-primary/5">
+                  <span class="text-ink/70">Eco obstétrica:</span> <strong class="font-extrabold text-primary">$11.060</strong>
+                </div>
+                <div class="bg-surface rounded-xl px-3 py-2 border border-primary/5">
+                  <span class="text-ink/70">Eco transvaginal:</span> <strong class="font-extrabold text-primary">$11.620</strong>
+                </div>
+                <div class="bg-surface rounded-xl px-3 py-2 border border-primary/5">
+                  <span class="text-ink/70">Eco Doppler 5D:</span> <strong class="font-extrabold text-primary">$49.950</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pack destacado -->
+          <div class="bg-primary/5 border border-primary/15 rounded-2xl p-4">
+            <span class="block text-xs font-bold text-secondary uppercase tracking-wider mb-1">Destacado</span>
+            <div class="text-[15px] font-bold text-primary">
+              Pack particular Consulta + Eco + PAP: <span class="text-xl font-extrabold text-primary block sm:inline">$59.500</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Clínica Dental -->
+        <div class="md:col-span-6 lg:col-span-3 bg-white rounded-3xl p-6 sm:p-7 border border-primary/10 shadow-xs hover:-translate-y-0.5 hover:border-secondary/40 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-secondary mb-2">
+              <svg class="w-3 h-3 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span>ODONTOLOGÍA</span>
+            </div>
+            <h4 class="text-xl font-extrabold text-primary mb-2">Clínica dental</h4>
+            <p class="text-sm text-ink/80 leading-relaxed mb-6">
+              Evaluación y tratamientos dentales para toda la familia.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-primary/10 bg-surface -mx-6 sm:-mx-7 -mb-6 sm:-mb-7 p-6 rounded-b-3xl">
+            <span class="block text-xs uppercase font-bold text-secondary mb-1">Facilidades de pago</span>
+            <div class="text-lg font-extrabold text-primary leading-snug">
+              Paga tu tratamiento de 3 a 6 cuotas sin interés.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA al final de la sección 2 -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a
+          href="https://app.salutem.cl/app/agenda-web/init/brimed"
+          target="_blank"
+          rel="noopener"
+          class="btn-arrow w-full sm:w-auto bg-primary text-white rounded-full font-bold px-8 py-3.5 text-base flex items-center justify-center gap-2 shadow-sm hover:opacity-95 transition-all"
+        >
+          <span>Reservar hora</span>
+          <svg class="btn-icon w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+        <a
+          href="https://app.salutem.cl/app/agenda-web/init/brimed?esProcedimiento=1"
+          target="_blank"
+          rel="noopener"
+          class="text-primary font-bold hover:text-secondary underline underline-offset-4 text-base py-2 transition-colors"
+        >
+          Reservar un examen
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Divisor con "+" redondeada -->
+  <div class="relative flex items-center justify-center max-w-[1200px] mx-auto px-5" aria-hidden="true">
+    <div class="w-full border-t border-primary/15"></div>
+    <div class="absolute bg-white px-3">
+      <svg class="w-5 h-5 text-secondary" viewBox="0 0 20 20" fill="currentColor">
+        <rect x="8.5" y="2" width="3" height="16" rx="1.5"/>
+        <rect x="2" y="8.5" width="16" height="3" rx="1.5"/>
+      </svg>
+    </div>
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- SECCIÓN 3 — CONVENIOS Y QUIÉNES SOMOS (fondo primary)    -->
+  <!-- ======================================================== -->
+  <section id="convenios" class="fade-in-section relative bg-primary text-white py-16 md:py-24 lg:py-28 overflow-hidden" aria-labelledby="convenios-heading">
+    
+    <!-- Patrón muy sutil de cruces en fondo primary -->
+    <div class="absolute inset-0 pointer-events-none opacity-10">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="conv-cross-pattern" width="64" height="64" patternUnits="userSpaceOnUse">
+            <path d="M32 24v16M24 32h16" stroke="#2FA4A9" stroke-width="3" stroke-linecap="round"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#conv-cross-pattern)"/>
+      </svg>
+    </div>
+
+    <div class="relative max-w-[1200px] mx-auto px-5 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        
+        <!-- Columna Izquierda: Tarjeta Vecino y Descuentos Reales -->
+        <div class="lg:col-span-7 text-left">
+          
+          <div class="inline-flex items-center gap-2 mb-3">
+            <svg class="w-3.5 h-3.5 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+              <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+              <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+            </svg>
+            <span class="text-[13px] font-extrabold uppercase tracking-[0.12em] text-white/80">
+              CONVENIO TARJETA VECINO
+            </span>
+          </div>
+
+          <h2 id="convenios-heading" class="text-[28px] sm:text-[36px] md:text-[44px] font-extrabold text-white leading-[1.1] tracking-tight mb-8">
+            Si vives en Ñuñoa, Florida o La Reina, tu atención te sale más barata.
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+            
+            <!-- Bloque 10% Fonasa -->
+            <div class="bg-white/10 rounded-3xl p-6 border border-white/15 backdrop-blur-xs">
+              <div class="text-[54px] sm:text-[64px] font-extrabold text-secondary leading-none mb-2">
+                10%
+              </div>
+              <p class="text-base text-white/95 font-medium leading-snug">
+                de descuento en el copago de tu bono Fonasa.
+              </p>
+            </div>
+
+            <!-- Bloque 15% Isapre/Particular -->
+            <div class="bg-white/10 rounded-3xl p-6 border border-white/15 backdrop-blur-xs">
+              <div class="text-[54px] sm:text-[64px] font-extrabold text-secondary leading-none mb-2">
+                15%
+              </div>
+              <p class="text-base text-white/95 font-medium leading-snug">
+                de descuento si eres Isapre, particular o no tienes previsión.
+              </p>
+            </div>
+
+          </div>
+
+          <p class="text-sm text-white/80 font-medium mb-8">
+            Presenta tu Tarjeta Vecino y tu carnet de identidad.
+          </p>
+
+          <!-- CTA Invertido: blanco con texto primary -->
+          <div class="pt-2">
+            <a
+              href="https://app.salutem.cl/app/agenda-web/init/brimed"
+              target="_blank"
+              rel="noopener"
+              class="btn-arrow inline-flex items-center justify-center gap-2 bg-white text-primary rounded-full font-bold text-base px-8 py-3.5 shadow-md hover:bg-surface active:scale-[0.99] transition-all"
+            >
+              <span>Reservar hora</span>
+              <svg class="btn-icon w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Columna Derecha: Tarjeta Blanca Quiénes Somos -->
+        <div class="lg:col-span-5">
+          <div class="bg-white text-ink rounded-3xl p-7 sm:p-9 border border-primary/10 shadow-xl">
+            
+            <div class="inline-flex items-center gap-2 mb-3">
+              <svg class="w-3.5 h-3.5 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+                <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+              </svg>
+              <span class="text-xs font-bold uppercase tracking-wider text-secondary">
+                NUESTRA HISTORIA
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-extrabold text-primary mb-4">
+              Un centro médico familiar
+            </h3>
+
+            <p class="text-base leading-relaxed text-ink/80 mb-6">
+              Brimed nació hace más de 20 años como una empresa familiar, con una marcada cercanía hacia sus pacientes. Somos un equipo con vocación de servicio que busca entregar una atención integral y personalizada, a un costo accesible.
+            </p>
+
+            <div class="pt-6 border-t border-primary/10">
+              <p class="text-sm text-ink/85 font-medium leading-relaxed">
+                ¿Tu empresa o institución quiere un convenio? Escríbenos a 
+                <a
+                  href="mailto:convenios@brimedsalud.com"
+                  class="font-bold text-primary underline underline-offset-2 hover:text-secondary transition-colors"
+                >
+                  convenios@brimedsalud.com
+                </a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- SECCIÓN 4 — OPINIONES (fondo surface, id="opiniones")     -->
+  <!-- ======================================================== -->
+  <section id="opiniones" class="fade-in-section bg-surface py-16 md:py-24 lg:py-28" aria-labelledby="opiniones-heading">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-8">
+      
+      <!-- Encabezado de Sección -->
+      <div class="text-left mb-12 md:mb-16">
+        <div class="inline-flex items-center gap-2 mb-2">
+          <svg class="w-3.5 h-3.5 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+            <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+            <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+          </svg>
+          <span class="text-[13px] font-extrabold uppercase tracking-[0.12em] text-secondary">
+            LO QUE DICEN NUESTROS PACIENTES
+          </span>
+        </div>
+        <h2 id="opiniones-heading" class="text-[28px] sm:text-[34px] md:text-[44px] font-extrabold text-primary leading-tight tracking-tight">
+          Atención cercana, contada por quienes vienen.
+        </h2>
+      </div>
+
+      <!-- Disposición: Móvil apiladas, Tablet 2 col + 1 full, Escritorio 3 columnas escalonadas (centro desplazada 32px hacia abajo) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-start">
+        
+        <!-- Testimonio 1: María Pizarro -->
+        <div class="bg-white rounded-3xl p-7 md:p-8 border border-primary/10 shadow-xs hover:-translate-y-0.5 hover:border-secondary/40 transition-all duration-200 flex flex-col justify-between h-full">
+          <div>
+            <!-- Comillas grandes en secondary -->
+            <div class="text-secondary font-serif text-5xl leading-none mb-3 select-none" aria-hidden="true">
+              “
+            </div>
+            <p class="text-base sm:text-[17px] text-ink leading-relaxed font-normal mb-8">
+              «Fui muy bien atendida. Excelente centro de salud. Me apoyan y solucionan todos mis requerimientos.»
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-4 border-t border-primary/10">
+            <div class="w-11 h-11 rounded-full bg-primary/10 text-primary font-extrabold text-sm flex items-center justify-center shrink-0">
+              MP
+            </div>
+            <div>
+              <span class="block font-bold text-ink text-base">María Pizarro</span>
+              <span class="block text-xs text-ink/60 font-medium">Paciente Brimed Salud</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2: Jesús Quintero (Escalonada hacia abajo en escritorio: lg:translate-y-8) -->
+        <div class="bg-white rounded-3xl p-7 md:p-8 border border-primary/10 shadow-xs hover:-translate-y-0.5 hover:border-secondary/40 transition-all duration-200 flex flex-col justify-between h-full lg:translate-y-8">
+          <div>
+            <div class="text-secondary font-serif text-5xl leading-none mb-3 select-none" aria-hidden="true">
+              “
+            </div>
+            <p class="text-base sm:text-[17px] text-ink leading-relaxed font-normal mb-8">
+              «¡El servicio fue excelente! La amabilidad y el buen trato son primordiales para los que somos pacientes; la interacción médico-paciente es muy importante. Aún me quedo corto de palabras y de agradecimientos.»
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-4 border-t border-primary/10">
+            <div class="w-11 h-11 rounded-full bg-primary/10 text-primary font-extrabold text-sm flex items-center justify-center shrink-0">
+              JQ
+            </div>
+            <div>
+              <span class="block font-bold text-ink text-base">Jesús Quintero</span>
+              <span class="block text-xs text-ink/60 font-medium">Paciente Brimed Salud</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3: Norma Acevedo (En tablet ocupa las 2 columnas para equilibrar) -->
+        <div class="md:col-span-2 lg:col-span-1 bg-white rounded-3xl p-7 md:p-8 border border-primary/10 shadow-xs hover:-translate-y-0.5 hover:border-secondary/40 transition-all duration-200 flex flex-col justify-between h-full">
+          <div>
+            <div class="text-secondary font-serif text-5xl leading-none mb-3 select-none" aria-hidden="true">
+              “
+            </div>
+            <p class="text-base sm:text-[17px] text-ink leading-relaxed font-normal mb-8">
+              «Muy buena la atención con la Dra. Puerta, y el personal muy amable y atento. Quedé contenta, porque fue bueno y rápido.»
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-4 border-t border-primary/10">
+            <div class="w-11 h-11 rounded-full bg-primary/10 text-primary font-extrabold text-sm flex items-center justify-center shrink-0">
+              NA
+            </div>
+            <div>
+              <span class="block font-bold text-ink text-base">Norma Acevedo</span>
+              <span class="block text-xs text-ink/60 font-medium">Paciente Brimed Salud</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Divisor con "+" redondeada -->
+  <div class="relative flex items-center justify-center max-w-[1200px] mx-auto px-5" aria-hidden="true">
+    <div class="w-full border-t border-primary/15"></div>
+    <div class="absolute bg-surface px-3">
+      <svg class="w-5 h-5 text-secondary" viewBox="0 0 20 20" fill="currentColor">
+        <rect x="8.5" y="2" width="3" height="16" rx="1.5"/>
+        <rect x="2" y="8.5" width="16" height="3" rx="1.5"/>
+      </svg>
+    </div>
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- SECCIÓN 5 — SEDES Y CONTACTO (fondo blanco, id="sedes")   -->
+  <!-- ======================================================== -->
+  <section id="sedes" class="fade-in-section bg-white py-16 md:py-24 lg:py-28" aria-labelledby="sedes-heading">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-8">
+      
+      <!-- Encabezado de Sección -->
+      <div class="text-left mb-10 md:mb-14">
+        <div class="inline-flex items-center gap-2 mb-2">
+          <svg class="w-3.5 h-3.5 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+            <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+            <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+          </svg>
+          <span class="text-[13px] font-extrabold uppercase tracking-[0.12em] text-secondary">
+            DOS SEDES EN ÑUÑOA
+          </span>
+        </div>
+        <h2 id="sedes-heading" class="text-[28px] sm:text-[34px] md:text-[44px] font-extrabold text-primary leading-tight tracking-tight">
+          Elige la sede que te quede más cerca.
+        </h2>
+      </div>
+
+      <!-- Dos Tarjetas de Sede -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
+        
+        <!-- Sede 1: José Pedro Alessandri -->
+        <div class="bg-surface rounded-3xl p-7 sm:p-8 border border-primary/10 shadow-xs hover:-translate-y-0.5 hover:border-secondary/40 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <!-- Estado dinámico -->
+            <div class="inline-flex items-center gap-2 bg-white border border-primary/10 rounded-full px-3.5 py-1.5 text-xs font-semibold text-ink mb-4 shadow-2xs">
+              <span class="sede-dot-alessandri w-2.5 h-2.5 rounded-full bg-secondary shrink-0"></span>
+              <span class="sede-text-alessandri text-ink/90">Calculando horario...</span>
+            </div>
+
+            <h3 class="text-2xl font-extrabold text-primary mb-2">
+              Sede José Pedro Alessandri
+            </h3>
+            
+            <p class="text-base text-ink/80 flex items-start gap-2.5 mb-5">
+              <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              <span>Av. José Pedro Alessandri 1859, Ñuñoa</span>
+            </p>
+
+            <div class="space-y-1.5 text-sm text-ink/80 mb-6 bg-white rounded-2xl p-4 border border-primary/10">
+              <div class="flex items-center gap-2 font-bold text-primary mb-1">
+                <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Horarios de atención:</span>
+              </div>
+              <p>Lunes a viernes 07:45–19:00</p>
+              <p>Sábado 08:00–14:00</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a
+              href="https://maps.app.goo.gl/p7SXZjxtQYUK6rSK6"
+              target="_blank"
+              rel="noopener"
+              class="btn-arrow w-full bg-white border-2 border-primary text-primary rounded-full font-bold py-3 px-5 text-sm flex items-center justify-center gap-2 hover:bg-primary hover:text-white transition-all"
+            >
+              <span>Cómo llegar</span>
+              <svg class="btn-icon w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sede 2: Grecia -->
+        <div class="bg-surface rounded-3xl p-7 sm:p-8 border border-primary/10 shadow-xs hover:-translate-y-0.5 hover:border-secondary/40 transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <!-- Estado dinámico -->
+            <div class="inline-flex items-center gap-2 bg-white border border-primary/10 rounded-full px-3.5 py-1.5 text-xs font-semibold text-ink mb-4 shadow-2xs">
+              <span class="sede-dot-grecia w-2.5 h-2.5 rounded-full bg-secondary shrink-0"></span>
+              <span class="sede-text-grecia text-ink/90">Calculando horario...</span>
+            </div>
+
+            <h3 class="text-2xl font-extrabold text-primary mb-2">
+              Sede Grecia
+            </h3>
+            
+            <p class="text-base text-ink/80 flex items-start gap-2.5 mb-5">
+              <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              <span>Av. Grecia 4364, Ñuñoa</span>
+            </p>
+
+            <div class="space-y-1.5 text-sm text-ink/80 mb-6 bg-white rounded-2xl p-4 border border-primary/10">
+              <div class="flex items-center gap-2 font-bold text-primary mb-1">
+                <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Horarios de atención:</span>
+              </div>
+              <p>Lunes a viernes 08:00–19:00</p>
+              <p>Sábado 08:00–14:00</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a
+              href="https://maps.app.goo.gl/RGwNF5XVEttnbK8k6"
+              target="_blank"
+              rel="noopener"
+              class="btn-arrow w-full bg-white border-2 border-primary text-primary rounded-full font-bold py-3 px-5 text-sm flex items-center justify-center gap-2 hover:bg-primary hover:text-white transition-all"
+            >
+              <span>Cómo llegar</span>
+              <svg class="btn-icon w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Debajo: Dos Columnas en Escritorio (Habla con nosotros + Formulario WhatsApp) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        
+        <!-- Izquierda: Bloque "Habla con nosotros" -->
+        <div class="lg:col-span-5 text-left">
+          
+          <div class="inline-flex items-center gap-2 mb-2">
+            <svg class="w-3.5 h-3.5 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">
+              <rect x="6.5" y="1" width="3" height="14" rx="1.5"/>
+              <rect x="1" y="6.5" width="14" height="3" rx="1.5"/>
+            </svg>
+            <span class="text-xs font-bold uppercase tracking-wider text-secondary">
+              CANALES DE ATENCIÓN
+            </span>
+          </div>
+
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary mb-6">
+            Habla con nosotros
+          </h3>
+
+          <div class="space-y-4 mb-8">
+            <!-- Mesa central -->
+            <a
+              href="tel:+56227160470"
+              class="flex items-center gap-4 p-4 bg-surface rounded-2xl border border-primary/10 hover:border-secondary/40 transition-all group"
+            >
+              <div class="w-12 h-12 rounded-full bg-white border border-primary/15 flex items-center justify-center text-primary group-hover:text-secondary shrink-0 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H3.75A2.25 2.25 0 001.5 4.5v2.25z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-xs uppercase font-bold text-ink/60">Mesa central</span>
+                <span class="block text-base sm:text-lg font-bold text-primary group-hover:text-secondary transition-colors">+56 2 2716 0470</span>
+              </div>
+            </a>
+
+            <!-- WhatsApp central -->
+            <a
+              href="https://wa.me/56977098203?text=Hola%20Brimed%20Salud%2C%20quiero%20hacer%20una%20consulta."
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-4 p-4 bg-surface rounded-2xl border border-primary/10 hover:border-secondary/40 transition-all group"
+            >
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white shrink-0 shadow-xs">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="block text-xs uppercase font-bold text-ink/60">WhatsApp central</span>
+                <span class="block text-base sm:text-lg font-bold text-primary group-hover:text-secondary transition-colors">+56 9 7709 8203</span>
+              </div>
+            </a>
+
+            <!-- Correo contacto -->
+            <a
+              href="mailto:contacto@brimedsalud.com"
+              class="flex items-center gap-4 p-4 bg-surface rounded-2xl border border-primary/10 hover:border-secondary/40 transition-all group"
+            >
+              <div class="w-12 h-12 rounded-full bg-white border border-primary/15 flex items-center justify-center text-primary group-hover:text-secondary shrink-0 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-xs uppercase font-bold text-ink/60">Correo electrónico</span>
+                <span class="block text-base sm:text-lg font-bold text-primary group-hover:text-secondary transition-colors">contacto@brimedsalud.com</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Redes sociales oficiales -->
+          <div class="pt-2">
+            <span class="block text-xs uppercase font-bold text-ink/60 mb-3">Síguenos en redes:</span>
+            <div class="flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/centromedicobrimedsalud/"
+                target="_blank"
+                rel="noopener"
+                class="w-10 h-10 rounded-full bg-surface border border-primary/15 flex items-center justify-center text-primary hover:text-secondary hover:border-secondary transition-colors"
+                aria-label="Facebook Brimed Salud"
+              >
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/brimedsalud/"
+                target="_blank"
+                rel="noopener"
+                class="w-10 h-10 rounded-full bg-surface border border-primary/15 flex items-center justify-center text-primary hover:text-secondary hover:border-secondary transition-colors"
+                aria-label="Instagram Brimed Salud"
+              >
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Derecha: Formulario de Contacto Directo a WhatsApp -->
+        <div class="lg:col-span-7">
+          <div class="bg-surface rounded-3xl p-6 sm:p-8 md:p-10 border border-primary/10 shadow-xs">
+            
+            <h3 class="text-2xl font-extrabold text-primary mb-2">
+              Envíanos un mensaje
+            </h3>
+            <p class="text-sm text-ink/75 mb-6">
+              Completa tus datos y te responderemos directamente por WhatsApp.
+            </p>
+
+            <form id="contact-form" class="space-y-4" novalidate>
+              
+              <!-- Nombre (obligatorio) -->
+              <div>
+                <label for="form-nombre" class="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1.5">
+                  Nombre completo <span class="text-secondary">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="form-nombre"
+                  name="nombre"
+                  required
+                  placeholder="Ej: Carolina Rojas"
+                  class="w-full bg-white border border-primary/20 rounded-2xl px-4 py-3 text-base text-ink focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-ink/30"
+                />
+                <span id="error-nombre" class="hidden text-xs font-semibold text-red-600 mt-1">Por favor ingresa tu nombre.</span>
+              </div>
+
+              <!-- Teléfono (obligatorio, type="tel") -->
+              <div>
+                <label for="form-telefono" class="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1.5">
+                  Teléfono <span class="text-secondary">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="form-telefono"
+                  name="telefono"
+                  required
+                  placeholder="Ej: +56 9 1234 5678"
+                  class="w-full bg-white border border-primary/20 rounded-2xl px-4 py-3 text-base text-ink focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-ink/30"
+                />
+                <span id="error-telefono" class="hidden text-xs font-semibold text-red-600 mt-1">Por favor ingresa tu teléfono.</span>
+              </div>
+
+              <!-- ¿Qué necesitas? -->
+              <div>
+                <label for="form-necesidad" class="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1.5">
+                  ¿Qué necesitas?
+                </label>
+                <div class="relative">
+                  <select
+                    id="form-necesidad"
+                    name="necesidad"
+                    class="w-full bg-white border border-primary/20 rounded-2xl px-4 py-3 text-base text-ink appearance-none focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all cursor-pointer"
+                  >
+                    <option value="Reservar una consulta">Reservar una consulta</option>
+                    <option value="Reservar un examen">Reservar un examen</option>
+                    <option value="Consultar por mis resultados">Consultar por mis resultados</option>
+                    <option value="Convenio Tarjeta Vecino">Convenio Tarjeta Vecino</option>
+                    <option value="Otra consulta">Otra consulta</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-ink/60">
+                    <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sede de preferencia -->
+              <div>
+                <label for="form-sede" class="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1.5">
+                  Sede de preferencia
+                </label>
+                <div class="relative">
+                  <select
+                    id="form-sede"
+                    name="sede"
+                    class="w-full bg-white border border-primary/20 rounded-2xl px-4 py-3 text-base text-ink appearance-none focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all cursor-pointer"
+                  >
+                    <option value="José Pedro Alessandri">José Pedro Alessandri</option>
+                    <option value="Grecia">Grecia</option>
+                    <option value="Me da lo mismo">Me da lo mismo</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-ink/60">
+                    <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mensaje (opcional) -->
+              <div>
+                <label for="form-mensaje" class="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1.5">
+                  Mensaje (opcional)
+                </label>
+                <textarea
+                  id="form-mensaje"
+                  name="mensaje"
+                  rows="3"
+                  placeholder="Detalla tu consulta o requerimiento..."
+                  class="w-full bg-white border border-primary/20 rounded-2xl px-4 py-3 text-base text-ink focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-ink/30"
+                ></textarea>
+              </div>
+
+              <!-- Botón Enviar por WhatsApp -->
+              <div class="pt-2">
+                <button
+                  type="submit"
+                  class="btn-arrow w-full min-h-[52px] bg-secondary text-white rounded-full font-bold text-base flex items-center justify-center gap-2.5 shadow-md hover:opacity-95 active:scale-[0.99] transition-all cursor-pointer"
+                >
+                  <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                  </svg>
+                  <span>Enviar por WhatsApp</span>
+                  <svg class="btn-icon w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- FOOTER (fondo ink, texto blanco/80)                       -->
+  <!-- ======================================================== -->
+  <footer class="bg-ink text-white/80 pt-16 pb-28 md:pb-16 border-t border-primary/20" aria-label="Pie de página">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+        
+        <!-- Logo y descripción de marca -->
+        <div class="lg:col-span-5 text-left">
+          <!-- Logo sobre contenedor blanco con rounded-2xl y padding de 8px -->
+          <div class="bg-white rounded-2xl p-2 inline-flex items-center justify-center mb-4 shadow-sm">
+            <img
+              src="https://brimedsalud.cl/wp-content/uploads/2024/05/LOGO-BRIMED-SALUD-web.png"
+              alt="Logo Centro Médico Brimed Salud"
+              class="h-[48px] w-auto object-contain"
+              loading="lazy"
+              onerror="renderLogoFallback(this)"
+            />
+          </div>
+
+          <h3 class="text-xl font-extrabold text-white mb-2">
+            Centro Médico Brimed Salud
+          </h3>
+          <p class="text-sm text-white/70 leading-relaxed max-w-sm mb-6">
+            Centro médico familiar en Ñuñoa, Santiago. Más de 20 años entregando atención cercana, oportuna y accesible.
+          </p>
+
+          <div class="flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/centromedicobrimedsalud/"
+              target="_blank"
+              rel="noopener"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-white transition-colors"
+              aria-label="Facebook Brimed Salud"
+            >
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/brimedsalud/"
+              target="_blank"
+              rel="noopener"
+              class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-secondary hover:text-white transition-colors"
+              aria-label="Instagram Brimed Salud"
+            >
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="lg:col-span-3 text-left">
+          <h4 class="text-xs uppercase font-extrabold tracking-wider text-secondary mb-4">
+            Gestión Online
+          </h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>
+              <a href="https://app.salutem.cl/app/agenda-web/init/brimed" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2">
+                <span class="text-secondary font-bold">+</span>
+                <span>Reservar consulta</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://app.salutem.cl/app/agenda-web/init/brimed?esProcedimiento=1" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2">
+                <span class="text-secondary font-bold">+</span>
+                <span>Reservar examen</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://brimedsalud.wiener-lab.com/estudios/login" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2">
+                <span class="text-secondary font-bold">+</span>
+                <span>Resultados de laboratorio</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://app.dalca.cl/portal/brimed" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2">
+                <span class="text-secondary font-bold">+</span>
+                <span>Resultados de imagenología</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sedes y Contacto -->
+        <div class="lg:col-span-4 text-left">
+          <h4 class="text-xs uppercase font-extrabold tracking-wider text-secondary mb-4">
+            Nuestras Sedes
+          </h4>
+          <div class="space-y-3.5 text-sm text-white/70">
+            <div>
+              <strong class="text-white block">Sede José Pedro Alessandri:</strong>
+              <span>Av. José Pedro Alessandri 1859, Ñuñoa</span>
+            </div>
+            <div>
+              <strong class="text-white block">Sede Grecia:</strong>
+              <span>Av. Grecia 4364, Ñuñoa</span>
+            </div>
+            <div class="pt-2">
+              <span class="block text-white/90">Mesa central: <a href="tel:+56227160470" class="text-white hover:text-secondary underline">+56 2 2716 0470</a></span>
+              <span class="block text-white/90">WhatsApp: <a href="https://wa.me/56977098203" target="_blank" rel="noopener" class="text-white hover:text-secondary underline">+56 9 7709 8203</a></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Línea final copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
+        <p>© Brimed Salud — Centro Médico en Ñuñoa, Santiago de Chile.</p>
+        <p>Todos los derechos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ======================================================== -->
+  <!-- BOTÓN FLOTANTE DE WHATSAPP (fijo en todo momento)         -->
+  <!-- ======================================================== -->
+  <aside aria-label="Contacto por WhatsApp">
+    <a
+      href="https://wa.me/56977098203?text=Hola%20Brimed%20Salud%2C%20quiero%20hacer%20una%20consulta."
+      target="_blank"
+      rel="noopener"
+      class="fixed bottom-5 right-5 z-50 h-14 w-14 md:w-auto md:px-5 md:py-3.5 bg-secondary text-white rounded-full flex items-center justify-center gap-2.5 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200"
+      aria-label="Escribir por WhatsApp a Brimed Salud"
+    >
+      <!-- Ícono WhatsApp SVG blanco -->
+      <svg class="w-7 h-7 fill-white shrink-0" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      <!-- Etiqueta en escritorio -->
+      <span class="hidden md:inline font-bold text-sm tracking-wide">
+        Escríbenos
+      </span>
+    </a>
+  </aside>
+
+
+  <!-- ======================================================== -->
+  <!-- JAVASCRIPT VANILLA: HORARIOS, FORMULARIO, ANIMACIONES    -->
+  <!-- ======================================================== -->
+  <script>
+    // Fallback si la imagen del logo falla (onerror)
+    function renderLogoFallback(imgElement) {
+      imgElement.onerror = null;
+      var parent = imgElement.parentElement;
+      if (parent) {
+        parent.innerHTML = '<div class="flex items-center gap-1.5 text-primary font-extrabold text-xl tracking-tight">' +
+          '<svg class="w-4 h-4 text-secondary shrink-0" viewBox="0 0 16 16" fill="currentColor">' +
+          '<rect x="6.5" y="1" width="3" height="14" rx="1.5"/>' +
+          '<rect x="1" y="6.5" width="14" height="3" rx="1.5"/>' +
+          '</svg>' +
+          '<span>Brimed Salud</span>' +
+          '</div>';
+      }
+    }
+
+    // Cálculo del estado de las sedes con hora de Chile (America/Santiago)
+    function updateBranchStatuses() {
+      try {
+        var now = new Date();
+        var dtf = new Intl.DateTimeFormat('en-US', {
+          timeZone: 'America/Santiago',
+          weekday: 'short',
+          hour: 'numeric',
+          minute: 'numeric',
+          hour12: false
+        });
+        
+        var parts = dtf.formatToParts(now);
+        var getVal = function(type) {
+          var found = parts.find(function(p) { return p.type === type; });
+          return found ? found.value : '';
+        };
+
+        var weekday = getVal('weekday'); // Sun, Mon, Tue, Wed, Thu, Fri, Sat
+        var hour = parseInt(getVal('hour'), 10) || 0;
+        var minute = parseInt(getVal('minute'), 10) || 0;
+        var currentMinutes = hour * 60 + minute;
+
+        // Horarios:
+        // Sede Alessandri:
+        // Lun-Vie: 07:45 (465 min) a 19:00 (1140 min)
+        // Sáb: 08:00 (480 min) a 14:00 (840 min)
+        // Dom: Cerrado
+        var alessandriOpen = false;
+        var alessandriText = '';
+
+        // Sede Grecia:
+        // Lun-Vie: 08:00 (480 min) a 19:00 (1140 min)
+        // Sáb: 08:00 (480 min) a 14:00 (840 min)
+        // Dom: Cerrado
+        var greciaOpen = false;
+        var greciaText = '';
+
+        if (weekday === 'Sun') {
+          // Domingo ambas cerradas
+          alessandriOpen = false;
+          alessandriText = 'Abre lunes 07:45';
+          greciaOpen = false;
+          greciaText = 'Abre lunes 08:00';
+        } else if (weekday === 'Sat') {
+          // Sábado
+          if (currentMinutes >= 480 && currentMinutes < 840) {
+            alessandriOpen = true;
+            alessandriText = 'Abierto hasta las 14:00';
+            greciaOpen = true;
+            greciaText = 'Abierto hasta las 14:00';
+          } else if (currentMinutes < 480) {
+            alessandriOpen = false;
+            alessandriText = 'Abre hoy 08:00';
+            greciaOpen = false;
+            greciaText = 'Abre hoy 08:00';
+          } else {
+            alessandriOpen = false;
+            alessandriText = 'Abre lunes 07:45';
+            greciaOpen = false;
+            greciaText = 'Abre lunes 08:00';
+          }
+        } else {
+          // Lunes a Viernes
+          // Alessandri (07:45 - 19:00)
+          if (currentMinutes >= 465 && currentMinutes < 1140) {
+            alessandriOpen = true;
+            alessandriText = 'Abierto hasta las 19:00';
+          } else if (currentMinutes < 465) {
+            alessandriOpen = false;
+            alessandriText = 'Abre hoy 07:45';
+          } else {
+            alessandriOpen = false;
+            alessandriText = (weekday === 'Fri') ? 'Abre sábado 08:00' : 'Abre mañana 07:45';
+          }
+
+          // Grecia (08:00 - 19:00)
+          if (currentMinutes >= 480 && currentMinutes < 1140) {
+            greciaOpen = true;
+            greciaText = 'Abierto hasta las 19:00';
+          } else if (currentMinutes < 480) {
+            greciaOpen = false;
+            greciaText = 'Abre hoy 08:00';
+          } else {
+            greciaOpen = false;
+            greciaText = (weekday === 'Fri') ? 'Abre sábado 08:00' : 'Abre mañana 08:00';
+          }
+        }
+
+        // Actualizar elementos DOM de Alessandri
+        document.querySelectorAll('.sede-text-alessandri').forEach(function(el) {
+          el.textContent = alessandriText;
+        });
+        document.querySelectorAll('.sede-dot-alessandri').forEach(function(el) {
+          el.className = 'sede-dot-alessandri w-2.5 h-2.5 rounded-full shrink-0 ' +
+            (alessandriOpen ? 'bg-secondary' : 'bg-ink/30');
+        });
+
+        // Actualizar elementos DOM de Grecia
+        document.querySelectorAll('.sede-text-grecia').forEach(function(el) {
+          el.textContent = greciaText;
+        });
+        document.querySelectorAll('.sede-dot-grecia').forEach(function(el) {
+          el.className = 'sede-dot-grecia w-2.5 h-2.5 rounded-full shrink-0 ' +
+            (greciaOpen ? 'bg-secondary' : 'bg-ink/30');
+        });
+
+      } catch (err) {
+        console.error('Error calculando horario:', err);
+      }
+    }
+
+    // Inicializar horarios al cargar
+    updateBranchStatuses();
+    // Actualizar cada 60 segundos
+    setInterval(updateBranchStatuses, 60000);
+
+    // Formulario de contacto hacia WhatsApp
+    var contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        var nombreInput = document.getElementById('form-nombre');
+        var telefonoInput = document.getElementById('form-telefono');
+        var necesidadInput = document.getElementById('form-necesidad');
+        var sedeInput = document.getElementById('form-sede');
+        var mensajeInput = document.getElementById('form-mensaje');
+        
+        var errorNombre = document.getElementById('error-nombre');
+        var errorTelefono = document.getElementById('error-telefono');
+
+        var isValid = true;
+
+        var nombre = (nombreInput ? nombreInput.value : '').trim();
+        var telefono = (telefonoInput ? telefonoInput.value : '').trim();
+        var necesidad = necesidadInput ? necesidadInput.value : 'Reservar una consulta';
+        var sede = sedeInput ? sedeInput.value : 'José Pedro Alessandri';
+        var mensaje = (mensajeInput ? mensajeInput.value : '').trim();
+
+        if (!nombre) {
+          if (errorNombre) errorNombre.classList.remove('hidden');
+          if (nombreInput) nombreInput.classList.add('border-red-500');
+          isValid = false;
+        } else {
+          if (errorNombre) errorNombre.classList.add('hidden');
+          if (nombreInput) nombreInput.classList.remove('border-red-500');
+        }
+
+        if (!telefono) {
+          if (errorTelefono) errorTelefono.classList.remove('hidden');
+          if (telefonoInput) telefonoInput.classList.add('border-red-500');
+          isValid = false;
+        } else {
+          if (errorTelefono) errorTelefono.classList.add('hidden');
+          if (telefonoInput) telefonoInput.classList.remove('border-red-500');
+        }
+
+        if (!isValid) return;
+
+        // Formato exacto requerido:
+        // «Hola Brimed Salud, soy [nombre]. Necesito: [opción]. Sede: [sede]. Mi teléfono: [teléfono]. [mensaje]»
+        var textPayload = 'Hola Brimed Salud, soy ' + nombre + '. Necesito: ' + necesidad + '. Sede: ' + sede + '. Mi teléfono: ' + telefono + '.';
+        if (mensaje) {
+          textPayload += ' ' + mensaje;
+        }
+
+        var waUrl = 'https://wa.me/56977098203?text=' + encodeURIComponent(textPayload);
+        window.open(waUrl, '_blank', 'noopener');
+      });
+    }
+
+    // Aparición suave al entrar en pantalla (IntersectionObserver)
+    if ('IntersectionObserver' in window) {
+      var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!prefersReducedMotion) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersect2D || entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in-section').forEach(function(sec) {
+          observer.observe(sec);
+        });
+      } else {
+        document.querySelectorAll('.fade-in-section').forEach(function(sec) {
+          sec.classList.add('is-visible');
+        });
+      }
+    } else {
+      document.querySelectorAll('.fade-in-section').forEach(function(sec) {
+        sec.classList.add('is-visible');
+      });
+    }
+
+    // Desplegable de Resultados para dispositivos táctiles o clics
+    var btnDropdown = document.getElementById('btn-dropdown-resultados');
+    var menuDropdown = document.getElementById('menu-dropdown-resultados');
+    if (btnDropdown && menuDropdown) {
+      btnDropdown.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var isExpanded = btnDropdown.getAttribute('aria-expanded') === 'true';
+        btnDropdown.setAttribute('aria-expanded', !isExpanded);
+        menuDropdown.classList.toggle('opacity-100');
+        menuDropdown.classList.toggle('visible');
+      });
+
+      document.addEventListener('click', function() {
+        btnDropdown.setAttribute('aria-expanded', 'false');
+        menuDropdown.classList.remove('opacity-100', 'visible');
+      });
+    }
+  </script>
+
+</body>
+</html>
